@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200821 13:06:29.203" rpa="false">
+<suite id="s1" name="Testcase" source="F:\RobotFramework Assignment\Assignment-2_Flipkart_Mobile\TestCase\testcase.robot">
+<test id="s1-t1" name="Test to Launch Flipkart App">
+<kw name="Open flipkart" library="Keywords">
+<kw name="Open Application" library="Zoomba.MobileLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${Remote_URL}</arg>
+<arg>platformName=${Platform}</arg>
+<arg>platformVersion=${AndroidVersion}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>appPackage=${packageName}</arg>
+<arg>appActivity=${appActivity}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:06:30.259" endtime="20200821 13:06:43.377"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Zoomba.MobileLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Welcome</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:06:43.377" endtime="20200821 13:06:45.269"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${AppLanguage}</arg>
+</arguments>
+<msg timestamp="20200821 13:06:45.269" level="INFO">Clicking element 'xpath = (//*[@resource-id='com.flipkart.android:id/locale_icon_layout'])[5]'.</msg>
+<status status="PASS" starttime="20200821 13:06:45.269" endtime="20200821 13:06:46.328"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Language_Confirmation_Btn}</arg>
+</arguments>
+<msg timestamp="20200821 13:06:46.328" level="INFO">Clicking element 'id = com.flipkart.android:id/select_btn'.</msg>
+<status status="PASS" starttime="20200821 13:06:46.328" endtime="20200821 13:06:49.340"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:06:30.259" endtime="20200821 13:06:49.340"></status>
+</kw>
+<kw name="SignIn Cancellation" library="Keywords">
+<kw name="Wait Until Page Contains" library="Zoomba.MobileLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${wait_until_page_contains}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:06:49.340" endtime="20200821 13:06:51.907"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Cancel_SignIn}</arg>
+</arguments>
+<msg timestamp="20200821 13:06:51.911" level="INFO">Clicking element 'id = com.google.android.gms:id/cancel'.</msg>
+<status status="PASS" starttime="20200821 13:06:51.907" endtime="20200821 13:06:52.583"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Cancel_Icon}</arg>
+</arguments>
+<msg timestamp="20200821 13:06:52.587" level="INFO">Clicking element 'id = com.flipkart.android:id/custom_back_icon'.</msg>
+<status status="PASS" starttime="20200821 13:06:52.583" endtime="20200821 13:06:53.403"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:06:49.340" endtime="20200821 13:06:53.403"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:06:30.259" endtime="20200821 13:06:53.407" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Test to select the Mobile Banner and Mobile Brand">
+<kw name="Click on Mobiles" library="Keywords">
+<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Mobiles}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:06:53.407" endtime="20200821 13:06:56.930"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Mobiles}</arg>
+</arguments>
+<msg timestamp="20200821 13:06:56.938" level="INFO">Clicking element 'xpath = (//*[@resource-id='com.flipkart.android:id/banner_image'])[3]'.</msg>
+<status status="PASS" starttime="20200821 13:06:56.930" endtime="20200821 13:07:00.365"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Mobile_Brand_REDMI}</arg>
+</arguments>
+<msg timestamp="20200821 13:07:00.373" level="INFO">Clicking element 'xpath = (//*[@resource-id='com.flipkart.android:id/banner_image'])[3]'.</msg>
+<status status="PASS" starttime="20200821 13:07:00.365" endtime="20200821 13:07:02.696"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:06:53.407" endtime="20200821 13:07:02.700"></status>
+</kw>
+<kw name="Tap on mobile" library="Keywords">
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Redmi_Note8_Pro}</arg>
+</arguments>
+<msg timestamp="20200821 13:07:02.716" level="INFO">Clicking element 'xpath = (//*[@resource-id='com.flipkart.android:id/banner_image'])[3]'.</msg>
+<status status="PASS" starttime="20200821 13:07:02.700" endtime="20200821 13:07:04.623"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Zoomba.MobileLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${page_load}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:04.623" endtime="20200821 13:07:07.386"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Location_Access_Not_now}</arg>
+</arguments>
+<msg timestamp="20200821 13:07:07.390" level="INFO">Clicking element 'id = com.flipkart.android:id/not_now_button'.</msg>
+<status status="PASS" starttime="20200821 13:07:07.386" endtime="20200821 13:07:07.458"></status>
+</kw>
+<kw name="Scroll Down To Text" library="Zoomba.MobileLibrary">
+<doc>Scrolls down to ``text`` using small swipes. The ``swipe_count`` defaults to 20.</doc>
+<arguments>
+<arg>${prod_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:07.458" endtime="20200821 13:07:07.822"></status>
+</kw>
+<kw name="Click Text" library="Zoomba.MobileLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>${prod_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:07.822" endtime="20200821 13:07:10.374"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Zoomba.MobileLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${prod_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:10.374" endtime="20200821 13:07:14.510"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:07:02.700" endtime="20200821 13:07:14.510"></status>
+</kw>
+<kw name="Add to cart" library="Keywords">
+<kw name="Click Text" library="Zoomba.MobileLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>${add_to_cart}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:14.514" endtime="20200821 13:07:16.408"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Zoomba.MobileLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${AddToCart_popup}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:16.408" endtime="20200821 13:07:19.724"></status>
+</kw>
+<kw name="Click Element" library="Zoomba.MobileLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${popup_cancellation}</arg>
+</arguments>
+<msg timestamp="20200821 13:07:19.732" level="INFO">Clicking element 'accessibility_id = Back Button'.</msg>
+<status status="PASS" starttime="20200821 13:07:19.724" endtime="20200821 13:07:19.858"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:07:14.510" endtime="20200821 13:07:19.858"></status>
+</kw>
+<kw name="Go to cart" library="Keywords">
+<kw name="Click Text" library="Zoomba.MobileLibrary">
+<doc>Click text identified by ``text``.</doc>
+<arguments>
+<arg>${go_to_cart}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:19.862" endtime="20200821 13:07:20.758"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Zoomba.MobileLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${prod_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:20.758" endtime="20200821 13:07:22.936"></status>
+</kw>
+<kw name="Get Text" library="Zoomba.MobileLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>${get_Actual_prod_name}</arg>
+</arguments>
+<assign>
+<var>${Actual_prod_name}</var>
+</assign>
+<msg timestamp="20200821 13:07:24.344" level="INFO">Element 'xpath = (//*[@class='android.widget.TextView'])[4]' text is 'Redmi Note 8 Pro (Shadow Black, 128 GB) ' </msg>
+<msg timestamp="20200821 13:07:24.344" level="INFO">${Actual_prod_name} = Redmi Note 8 Pro (Shadow Black, 128 GB) </msg>
+<status status="PASS" starttime="20200821 13:07:22.936" endtime="20200821 13:07:24.344"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Actual_prod_name}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:24.344" endtime="20200821 13:07:24.344"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Actual_prod_name}'=='${expected_Prod_Name}'</arg>
+<arg>Log to console</arg>
+<arg>${yes}</arg>
+<arg>ELSE</arg>
+<arg>Log to console</arg>
+<arg>${no}</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${no}</arg>
+</arguments>
+<status status="PASS" starttime="20200821 13:07:24.348" endtime="20200821 13:07:24.348"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:07:24.348" endtime="20200821 13:07:24.348"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:07:19.862" endtime="20200821 13:07:24.352"></status>
+</kw>
+<status status="PASS" starttime="20200821 13:06:53.407" endtime="20200821 13:07:24.352" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200821 13:06:29.211" endtime="20200821 13:07:24.356"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
